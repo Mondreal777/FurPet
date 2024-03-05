@@ -18,6 +18,7 @@ import ReHome from './pages/rehome';
 import AddPet from './pages/addpet';
 import UpdateForm from './pages/updatePet';
 import AppointmentList from './pages/appointment_list';
+import Dashboard from './pages/dashboard';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -95,6 +96,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/">
           <Redirect to="/login" />
+        </Route>
+        <Route exact path="/dashboard">
+          <Dashboard />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
