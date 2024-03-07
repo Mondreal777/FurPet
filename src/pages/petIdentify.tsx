@@ -1,4 +1,5 @@
 import React, { useState, useRef, useReducer } from "react";
+import * as tf from '@tensorflow/tfjs'
 import * as mobilenet from "@tensorflow-models/mobilenet";
 import "./petIdentify.css";
 
@@ -31,6 +32,7 @@ const machine: Machine = {
 };
 
 const PetIdentifier: React.FC = () => {
+  tf.setBackend("cpu");
   const [results, setResults] = useState<Result[]>([]);
   const [imageURL, setImageURL] = useState<string | null>(null);
   const [model, setModel] = useState<any | null>(null);

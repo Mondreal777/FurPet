@@ -16,13 +16,10 @@ type Pet = {
     name: string;   
     age: number;
     gender: 'male' | 'female';
-    neutered: 'yes' | 'no';
     type: 'cat' | 'dog';
     breed: string;
     weight: number;
     location: string;
-    about: string;
-    caretakerInfo: string;
     imageUrl: string;
 };
 

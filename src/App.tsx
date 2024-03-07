@@ -18,6 +18,7 @@ import ReHome from './pages/rehome';
 import AddPet from './pages/addpet';
 import UpdateForm from './pages/updatePet';
 import AppointmentList from './pages/appointment_list';
+import PetIdentifier from './pages/petIdentify';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -54,6 +55,9 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
+      <Route exact path="/petIdentifier">
+          <PetIdentifier />
+        </Route>
         <Route exact path="/signup">
           <SignUp />
         </Route>
